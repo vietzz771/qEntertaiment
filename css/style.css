@@ -8,6 +8,18 @@ a {
   color: #fff;
 }
 
+#event::before,
+#home::before,
+#gallery::before,
+#news::before,
+#about::before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
 .nav {
   background-color: black;
   display: grid;
@@ -132,6 +144,9 @@ a {
 
 .carousel {
   margin-top: 80px;
+}
+.carousel-inner {
+  scroll-padding-top: -80px;
 }
 @media only screen and (max-width: 768px) {
   .carousel {

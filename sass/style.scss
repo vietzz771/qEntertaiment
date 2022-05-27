@@ -13,8 +13,20 @@ a {
 	text-decoration: none;
 	color: $white-color;
 }
-// Navbar
+// handle scroll
 
+#event::before,
+#home::before,
+#gallery::before,
+#news::before,
+#about::before {
+	content: '';
+	display: block;
+	height: 80px;
+	margin-top: -80px;
+	visibility: hidden;
+}
+// Navbar
 .nav {
 	background-color: $black-color;
 	display: grid;
@@ -118,6 +130,9 @@ a {
 // Carousel
 .carousel {
 	margin-top: 80px;
+	&-inner {
+		scroll-padding-top: -80px;
+	}
 	@include Responsive(SM) {
 		margin-top: 65px;
 	}
