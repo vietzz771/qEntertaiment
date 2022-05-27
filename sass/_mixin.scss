@@ -1,6 +1,7 @@
 // Khai báo kích thước tương ứng với màn hình thiết bị
 
 $XS: 480px;
+$XSM: 600px;
 $SM: 768px;
 $MD: 1024px;
 $XL: 1170px;
@@ -10,6 +11,10 @@ $XL: 1170px;
 @mixin Responsive($canvas) {
 	@if $canvas == XS {
 		@media only screen and (max-width: $XS) {
+			@content;
+		}
+	} @else if $canvas == XSM {
+		@media only screen and (max-width: $XSM) {
 			@content;
 		}
 	} @else if $canvas == SM {

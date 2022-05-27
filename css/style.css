@@ -24,7 +24,6 @@ a {
 @media only screen and (max-width: 1024px) {
   .nav {
     padding: 5px 25px 0 25px;
-    display: grid;
     grid-template-columns: 235px 1fr;
   }
 }
@@ -32,6 +31,11 @@ a {
   .nav {
     grid-template-columns: 180px 1fr;
     padding: 5px 5px 0 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav {
+    grid-template-columns: 120px 1fr;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -54,6 +58,11 @@ a {
 .nav__logo {
   width: 150px;
 }
+@media only screen and (max-width: 600px) {
+  .nav__logo {
+    width: 100px;
+  }
+}
 .nav__links {
   align-self: center;
   display: flex;
@@ -62,6 +71,12 @@ a {
 @media only screen and (max-width: 768px) {
   .nav__links {
     gap: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav__links {
+    padding-top: 10px;
+    gap: 15px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -74,6 +89,11 @@ a {
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .nav__links p {
+    font-size: 12px;
+  }
 }
 .nav__transition {
   transition: all 150ms linear 0s;
