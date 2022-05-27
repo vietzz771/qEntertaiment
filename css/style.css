@@ -44,6 +44,11 @@ a {
     justify-content: space-between;
   }
 }
+@media only screen and (max-width: 480px) {
+  .nav__toggleShow {
+    display: flex !important;
+  }
+}
 .nav__toggle {
   display: none;
   cursor: pointer;
@@ -61,6 +66,12 @@ a {
 @media only screen and (max-width: 600px) {
   .nav__logo {
     width: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav__logo {
+    width: 150px;
+    margin-bottom: 10px;
   }
 }
 .nav__links {
@@ -81,7 +92,12 @@ a {
 }
 @media only screen and (max-width: 480px) {
   .nav__links {
-    display: none;
+    height: 1000px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
   }
 }
 .nav__links p {
@@ -97,6 +113,13 @@ a {
 }
 .nav__transition {
   transition: all 150ms linear 0s;
+}
+@media only screen and (max-width: 480px) {
+  .nav__items {
+    display: none;
+    padding: 0 100px 15px 25px;
+    padding-right: 100px;
+  }
 }
 
 .carousel {

@@ -14,6 +14,7 @@ a {
 	color: $white-color;
 }
 // Navbar
+
 .nav {
 	background-color: $black-color;
 	display: grid;
@@ -41,6 +42,11 @@ a {
 		display: flex;
 		justify-content: space-between;
 	}
+	&__toggleShow {
+		@include Responsive(XS) {
+			display: flex !important;
+		}
+	}
 	&__toggle {
 		display: none;
 		cursor: pointer;
@@ -56,6 +62,10 @@ a {
 		@include Responsive(XSM) {
 			width: 100px;
 		}
+		@include Responsive(SM) {
+			width: 150px;
+			margin-bottom: 10px;
+		}
 	}
 	&__links {
 		align-self: center;
@@ -69,7 +79,12 @@ a {
 			gap: 15px;
 		}
 		@include Responsive(XS) {
-			display: none;
+			height: 1000px;
+			background-color: $black-color;
+			position: absolute;
+			right: 0;
+			top: 100%;
+			flex-direction: column;
 		}
 		p {
 			white-space: nowrap;
@@ -83,6 +98,13 @@ a {
 	}
 	&__transition {
 		transition: all 150ms linear 0s;
+	}
+	&__items {
+		@include Responsive(XS) {
+			display: none;
+			padding: 0 100px 15px 25px;
+			padding-right: 100px;
+		}
 	}
 }
 // Carousel
