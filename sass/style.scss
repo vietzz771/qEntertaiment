@@ -1,6 +1,6 @@
 @import '../sass/mixin';
 $white-color: #fff;
-$orange-color: rgb(204, 25, 15);
+$orange-color: #e04d01;
 $purple-color: rgb(108, 22, 199);
 $blue-color: rgb(1, 127, 255);
 $button-blue-color: rgb(47, 123, 254);
@@ -21,36 +21,38 @@ a {
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	text-align: center;
-	height: 65px;
+	height: 80px;
 	padding: 0px 50px;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
 	top: 0;
+	:hover {
+		color: $orange-color;
+	}
 	@include Responsive(MD) {
-		padding: 5px 25px 0 25px;
+		padding: 0 25px 0 25px;
 		grid-template-columns: 235px 1fr;
 	}
 	@include Responsive(SM) {
+		height: 65px;
 		grid-template-columns: 180px 1fr;
-		padding: 5px 5px 0 5px;
+		padding: 0px 5px 0 5px;
 	}
 	@include Responsive(XSM) {
-		grid-template-columns: 120px 1fr;
-	}
-	@include Responsive(XS) {
 		display: flex;
 		justify-content: space-between;
 	}
+
 	&__toggleShow {
-		@include Responsive(XS) {
+		@include Responsive(XSM) {
 			display: flex !important;
 		}
 	}
 	&__toggle {
 		display: none;
 		cursor: pointer;
-		@include Responsive(XS) {
+		@include Responsive(XSM) {
 			font-size: 40px;
 			display: block;
 			margin-top: -15px;
@@ -58,15 +60,25 @@ a {
 	}
 
 	&__logo {
-		width: 150px;
-		@include Responsive(XSM) {
-			width: 100px;
+		width: 80px;
+		margin-left: 8px;
+		object-fit: cover;
+		@include Responsive(MD) {
+			margin-left: 12px;
+			width: 80px;
 		}
 		@include Responsive(SM) {
-			width: 150px;
-			margin-bottom: 10px;
+			width: 65px;
+		}
+		@include Responsive(XSM) {
+			width: 65px;
+		}
+		@include Responsive(XS) {
+			width: 65px;
+			margin-left: -6px;
 		}
 	}
+
 	&__links {
 		align-self: center;
 		display: flex;
@@ -78,7 +90,7 @@ a {
 			padding-top: 10px;
 			gap: 15px;
 		}
-		@include Responsive(XS) {
+		@include Responsive(XSM) {
 			background-color: $black-color;
 			height: 1000px;
 			position: absolute;
@@ -96,27 +108,28 @@ a {
 			}
 		}
 	}
-	&__transition {
-		transition: all 150ms linear 0s;
-	}
 	&__items {
-		@include Responsive(XS) {
+		@include Responsive(XSM) {
 			display: none;
-			padding: 0 100px 15px 25px;
-			padding-right: 100px;
+			margin: 0 100px 15px 25px;
 		}
 	}
 }
 // Carousel
 .carousel {
-	margin-top: 65px;
+	margin-top: 80px;
+	@include Responsive(SM) {
+		margin-top: 65px;
+	}
 	&-item img {
 		@include Responsive(MD) {
 			height: 750px;
 			object-fit: cover;
 		}
-		@include Responsive(XS) {
+		@include Responsive(XSM) {
 			width: 100%;
+			height: 600px;
+			object-fit: cover;
 		}
 		@include Responsive(XS) {
 			width: 100%;
@@ -225,6 +238,10 @@ a {
 			padding: 50px 75px 70px 75px;
 			gap: 35px;
 		}
+		@include Responsive(XSM) {
+			grid-template-columns: 1fr;
+			row-gap: 60px;
+		}
 		@include Responsive(XS) {
 			row-gap: 70px;
 			grid-template-columns: 1fr;
@@ -240,6 +257,12 @@ a {
 		border-radius: 0px 50px;
 		object-fit: cover;
 		background-size: cover;
+		@include Responsive(XSM) {
+			width: 100%;
+			height: 250px;
+			object-fit: cover;
+			background-size: cover;
+		}
 		@include Responsive(XS) {
 			width: 100%;
 			object-fit: cover;
@@ -290,6 +313,9 @@ a {
 			gap: 35px;
 			row-gap: 70px;
 		}
+		@include Responsive(XSM) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 		@include Responsive(XS) {
 			grid-template-columns: 1fr;
 			padding: 20px 20px 0 20px;
@@ -301,6 +327,10 @@ a {
 		border-width: 1px;
 		border-top-right-radius: 50px;
 		position: relative;
+		a:hover {
+			background-color: $orange-color;
+			color: $white-color;
+		}
 	}
 	&__items-spacing {
 		padding: 10px;
@@ -336,6 +366,7 @@ a {
 		position: absolute;
 		left: 27%;
 		top: 95%;
+		transition: 0.3s;
 		@include Responsive(MD) {
 			left: 16%;
 		}
@@ -343,6 +374,9 @@ a {
 			font-size: 14px;
 			padding: 10px 25px;
 			left: 17%;
+		}
+		@include Responsive(XSM) {
+			left: 20%;
 		}
 		@include Responsive(XS) {
 			left: 35%;
@@ -492,6 +526,9 @@ a {
 			gap: 35px;
 			padding: 50px 75px;
 		}
+		@include Responsive(XSM) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 		@include Responsive(XS) {
 			padding: 25px 20px;
 			grid-template-columns: 1fr;
@@ -584,6 +621,9 @@ a {
 		display: flex;
 		font-size: 30px;
 		gap: 20px;
+		:hover {
+			color: $orange-color;
+		}
 		@include Responsive(SM) {
 			font-size: 20px;
 		}
