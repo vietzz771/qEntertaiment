@@ -422,7 +422,6 @@ a {
 	}
 	&__list-items {
 		opacity: 0.99999;
-		margin-top: 50px;
 		padding: 0 135px;
 		@include Responsive(MD) {
 			padding: 0 114px;
@@ -445,11 +444,16 @@ a {
 			'd e f'
 			'd e f';
 		@include Responsive(MD) {
-			grid-template-rows: 160px 120px 160px 160px 160px;
+			grid-template-rows: 120px 120px 260px 260px 260px;
+		}
+		@include Responsive(SM) {
+			height: 900px;
+			grid-template-rows: 150px 100px 200px 200px 200px;
 		}
 		@include Responsive(XS) {
+			height: 1550px;
 			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: 200px 200px 200px 200px 200px;
+			grid-template-rows: 300px 300px 250px 250px 450px 300px;
 			grid-template-areas:
 				'a a'
 				'b b'
@@ -460,6 +464,11 @@ a {
 	}
 	&__items--img:first-child {
 		grid-area: a;
+	}
+	&__items--img img:first-child {
+		@include Responsive(MD) {
+			height: 450px !important;
+		}
 	}
 	&__items--img:last-child {
 		grid-area: f;
@@ -481,11 +490,15 @@ a {
 		height: 400px;
 		object-fit: cover;
 		@include Responsive(MD) {
-			height: 280px;
+			height: 280px !important;
 			object-fit: cover;
 		}
 		@include Responsive(XS) {
-			height: 350px;
+			height: 350px !important;
+			object-fit: cover;
+		}
+		@include Responsive(SM) {
+			height: 400px !important;
 			object-fit: cover;
 		}
 	}
