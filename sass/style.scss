@@ -603,6 +603,10 @@ div[id] {
 			gap: 35px;
 			padding: 25px 75px 0 75px;
 		}
+		@include Responsive(SM) {
+			gap: 35px;
+			padding: 25px 35px 0 35px;
+		}
 		@include Responsive(XS) {
 			display: flex;
 			flex-direction: column-reverse;
