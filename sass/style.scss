@@ -1,6 +1,6 @@
 @import '../sass/mixin';
 @import '../sass/variables';
-@import '../sass/news';
+@import 'news';
 body {
 	color: $white-color;
 	font-family: Quicksand, sans-serif;
