@@ -1,10 +1,6 @@
 @import '../sass/mixin';
-$white-color: #fff;
-$orange-color: #e04d01;
-$purple-color: rgb(108, 22, 199);
-$blue-color: rgb(1, 127, 255);
-$button-blue-color: rgb(47, 123, 254);
-$black-color: rgb(0, 0, 0);
+@import '../sass/variables';
+@import '../sass/news';
 body {
 	color: $white-color;
 	font-family: Quicksand, sans-serif;
@@ -127,6 +123,7 @@ a {
 		}
 	}
 }
+
 // Carousel
 .carousel {
 	margin-top: 80px;

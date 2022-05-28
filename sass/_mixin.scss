@@ -1,12 +1,8 @@
-// Khai báo kích thước tương ứng với màn hình thiết bị
-
 $XS: 480px;
 $XSM: 600px;
 $SM: 768px;
 $MD: 1024px;
 $XL: 1170px;
-
-// media queries
 
 @mixin Responsive($canvas) {
 	@if $canvas == XS {
