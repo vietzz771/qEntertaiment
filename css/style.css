@@ -359,6 +359,7 @@ a {
 
 .news {
   background-color: black;
+  margin-bottom: 80px;
 }
 @media only screen and (max-width: 1024px) {
   .news {

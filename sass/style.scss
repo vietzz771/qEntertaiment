@@ -307,6 +307,7 @@ a {
 // news
 .news {
 	background-color: $black-color;
+	margin-bottom: 80px;
 	@include Responsive(MD) {
 		padding-bottom: 50px;
 	}
