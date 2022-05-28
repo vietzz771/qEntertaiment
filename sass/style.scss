@@ -1,5 +1,5 @@
-@import '../sass/mixin';
-@import '../sass/variables';
+@import 'mixin';
+@import 'variables';
 @import 'news';
 body {
 	color: $white-color;
@@ -11,16 +11,8 @@ a {
 }
 // handle scroll
 
-#event::before,
-#home::before,
-#gallery::before,
-#news::before,
-#about::before {
-	content: '';
-	display: block;
-	height: 80px;
-	margin-top: -80px;
-	visibility: hidden;
+div[id] {
+	scroll-margin-top: 80px;
 }
 // Navbar
 .nav {
@@ -304,7 +296,6 @@ a {
 // news
 .news {
 	background-color: $black-color;
-	margin-bottom: 80px;
 	@include Responsive(MD) {
 		padding-bottom: 50px;
 	}
