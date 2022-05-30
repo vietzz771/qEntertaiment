@@ -23,7 +23,7 @@ div[id] {
 	align-items: center;
 	text-align: center;
 	height: 80px;
-	padding: 0px 50px;
+	padding: 0 50px;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
@@ -44,7 +44,9 @@ div[id] {
 		display: flex;
 		justify-content: space-between;
 	}
-
+	@include Responsive(XS) {
+		padding: 0 20px;
+	}
 	&__toggleShow {
 		@include Responsive(XSM) {
 			display: flex !important;
@@ -333,6 +335,11 @@ div[id] {
 		border-width: 1px;
 		border-top-right-radius: 50px;
 		position: relative;
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.1),
+			rgba(125, 1, 255, 0.3)
+		);
 		a:hover {
 			background-color: $orange-color;
 			color: $white-color;

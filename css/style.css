@@ -298,6 +298,27 @@
   height: 3px;
   background-color: #e04d01;
 }
+.service__hot {
+  background-color: black;
+  position: relative;
+}
+.service__hot-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: content-box;
+  background-position: center top;
+  background-repeat: repeat;
+  background-image: url(../img/service-bgr.png);
+  filter: blur(10px);
+  opacity: 0.15;
+}
 .service__hot-title {
   text-align: center;
 }
@@ -336,6 +357,27 @@
 .service__hot-items h3 {
   margin-top: 20px;
   font-weight: bold;
+}
+.service__more {
+  background-color: black;
+  position: relative;
+}
+.service__more-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: content-box;
+  background-position: center top;
+  background-repeat: repeat;
+  background-image: url(../img/service-more-br.png);
+  filter: blur(10px);
+  opacity: 0.24;
 }
 .service__more-title {
   text-align: center;
@@ -589,7 +631,7 @@ div[id] {
   align-items: center;
   text-align: center;
   height: 80px;
-  padding: 0px 50px;
+  padding: 0 50px;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -615,6 +657,11 @@ div[id] {
   .nav {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .nav {
+    padding: 0 20px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -967,6 +1014,7 @@ div[id] {
   border-width: 1px;
   border-top-right-radius: 50px;
   position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(125, 1, 255, 0.3));
 }
 .news__items a:hover {
   background-color: #e04d01;
