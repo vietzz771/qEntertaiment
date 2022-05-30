@@ -1,0 +1,143 @@
+@import 'mixin';
+@import 'variables';
+
+.about__system {
+	background: $black-color;
+	margin-top: 80px;
+	padding: 30px 135px;
+	position: relative;
+	@include Responsive(MD) {
+		padding: 50px 114px;
+	}
+	@include Responsive(SM) {
+		padding: 75px;
+		margin-top: 35px;
+	}
+	@include Responsive(XSM) {
+		padding: 35px;
+	}
+	@include Responsive(XS) {
+		margin-top: 65px;
+		padding: 20px;
+		padding-top: 50px;
+	}
+	&-background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		pointer-events: none;
+		overflow: hidden;
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-position: center top;
+		background-repeat: repeat;
+		background-image: url(../img/about-bgr.png);
+		filter: blur(10px);
+		opacity: 0.15;
+	}
+	&-title {
+		text-align: center;
+	}
+	&-title--middle {
+		display: inline-block;
+		position: relative;
+		h2 {
+			font-size: 30px;
+			font-weight: bold;
+			color: $orange-color;
+		}
+		&-shape {
+			position: absolute;
+			bottom: -5px;
+			left: 20%;
+			width: 60%;
+			height: 3px;
+			background-color: $orange-color;
+		}
+	}
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 100px;
+		margin-top: 50px;
+	}
+	&-items {
+		text-align: center;
+		border: 1px solid $orange-color;
+		&--img {
+			position: relative;
+			background-color: $black-color;
+			display: flex;
+			height: 300px;
+			justify-content: center;
+			img {
+				object-fit: cover;
+				padding: 20px 0;
+			}
+		}
+		&--background {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			overflow: hidden;
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-repeat: repeat;
+			background-image: url(../img/about-items-img-bgr.png);
+			filter: blur(2px);
+			opacity: 0.15;
+		}
+		&--title {
+			padding: 20px;
+			text-align: start;
+			h3 {
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+		&--content {
+			font-weight: bold;
+			text-align: start;
+			padding: 20px;
+			padding-top: 0;
+		}
+		&--location,
+		&--time,
+		&--phone {
+			padding: 10px 0;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			i {
+				font-size: 30px;
+				color: $orange-color;
+			}
+			span {
+				font-size: 20px;
+				color: $white-color;
+			}
+		}
+		&--btn {
+			a {
+				font-size: 20px;
+				font-weight: bold;
+				display: inline-block;
+				border: 3px solid $orange-color;
+				border-radius: 30px;
+				padding: 10px 40px;
+			}
+			a:hover {
+				color: $white-color;
+				background-color: $orange-color;
+			}
+			margin-bottom: 20px;
+		}
+	}
+}
