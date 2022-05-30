@@ -158,6 +158,7 @@
 					height: 100px;
 				}
 				@include Responsive(XS) {
+					top: 15%;
 					width: 100px;
 					height: 90px;
 				}
@@ -207,7 +208,7 @@
 					width: 120px;
 					height: 90px;
 					top: -20px;
-					left: 1.5%;
+					left: 0;
 				}
 			}
 		}
