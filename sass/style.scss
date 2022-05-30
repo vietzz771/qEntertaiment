@@ -1,6 +1,7 @@
 @import 'mixin';
 @import 'variables';
 @import 'news';
+@import 'service';
 body {
 	color: $white-color;
 	font-family: Quicksand, sans-serif;
@@ -142,6 +143,7 @@ div[id] {
 		}
 	}
 }
+
 // Title
 .title--left {
 	opacity: 0.99999;
