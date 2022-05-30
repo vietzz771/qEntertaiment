@@ -10,13 +10,15 @@
 	}
 	@include Responsive(SM) {
 		padding: 75px;
-		margin-top: 65px;
+		margin-top: 35px;
 	}
 	@include Responsive(XSM) {
 		padding: 35px;
 	}
 	@include Responsive(XS) {
+		margin-top: 65px;
 		padding: 20px;
+		padding-top: 50px;
 	}
 
 	&__title {
@@ -50,6 +52,12 @@
 			@include Responsive(MD) {
 				gap: 50px;
 			}
+			@include Responsive(SM) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@include Responsive(XS) {
+				gap: 20px;
+			}
 		}
 		&-items {
 			display: flex;
@@ -69,6 +77,9 @@
 		&-title {
 			text-align: center;
 			margin-top: 30px;
+			@include Responsive(SM) {
+				margin-top: 45px;
+			}
 		}
 		&-list {
 			margin-top: 80px;
@@ -77,6 +88,12 @@
 			gap: 30px;
 			@include Responsive(MD) {
 				gap: 50px;
+			}
+			@include Responsive(XSM) {
+				gap: 20px;
+			}
+			@include Responsive(XS) {
+				gap: 10px;
 			}
 		}
 		&-items {
@@ -98,30 +115,81 @@
 				position: absolute;
 				display: flex;
 				align-items: center;
+				@include Responsive(SM) {
+					width: 150px;
+					height: 100px;
+				}
+				@include Responsive(XS) {
+					width: 100px;
+					height: 90px;
+				}
 				h3 {
 					padding: 10px;
 					line-height: 1.3;
 					font-weight: bold;
 					font-size: 30px;
+					@include Responsive(SM) {
+						font-size: 20px;
+					}
+					@include Responsive(XS) {
+						font-size: 16px;
+					}
 				}
 			}
 			&-title--right {
 				right: -75px;
+				@include Responsive(XS) {
+					right: -20px;
+				}
 			}
 			&-title--left {
 				left: -75px;
+				@include Responsive(XS) {
+					left: -20px;
+				}
 			}
 			&-title--middle {
 				width: 180px;
 				height: 200px;
 				top: -75px;
 				left: 25%;
+				@include Responsive(MD) {
+					left: 11%;
+				}
+				@include Responsive(SM) {
+					width: 130px;
+					height: 150px;
+					left: 15%;
+				}
+				@include Responsive(XSM) {
+					top: -50px;
+					left: 10%;
+				}
+				@include Responsive(XS) {
+					width: 120px;
+					height: 90px;
+					top: -20px;
+					left: 1.5%;
+				}
 			}
 		}
 	}
 }
 .marketing-package {
-	margin-top: 50px;
+	background-color: $black-color;
+	padding: 50px 135px;
+	@include Responsive(MD) {
+		padding: 50px 114px;
+	}
+	@include Responsive(SM) {
+		padding: 20px;
+	}
+	@include Responsive(XSM) {
+		padding: 35px;
+	}
+	@include Responsive(XS) {
+		padding: 20px;
+	}
 	&--title {
 		text-align: center;
 	}
@@ -130,6 +198,16 @@
 	display: grid;
 	text-align: center;
 	grid-template-columns: repeat(3, 1fr);
+	@include Responsive(MD) {
+		gap: 25px;
+	}
+	@include Responsive(SM) {
+		gap: 10px;
+	}
+	@include Responsive(XSM) {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
 	gap: 50px;
 	margin-top: 50px;
 }
