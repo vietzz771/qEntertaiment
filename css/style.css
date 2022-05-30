@@ -1307,6 +1307,11 @@ div[id] {
   background-color: black;
   padding-bottom: 30px;
 }
+@media only screen and (max-width: 480px) {
+  .contact {
+    padding-bottom: 80px;
+  }
+}
 .contact__items {
   padding: 50px 135px 0 135px;
   display: grid;
