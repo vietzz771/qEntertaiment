@@ -3,6 +3,9 @@
 @import 'news';
 @import 'service';
 @import 'about';
+html {
+	scroll-behavior: smooth;
+}
 body {
 	color: $white-color;
 	font-family: Quicksand, sans-serif;
@@ -217,22 +220,22 @@ div[id] {
 .event {
 	background-color: $black-color;
 	position: relative;
-	&__background {
-		position: absolute;
-		width: 100%;
-		height: 90%;
-		top: 0;
-		left: 0;
-		pointer-events: none;
-		overflow: hidden;
-		background-size: cover;
-		background-attachment: scroll;
-		background-origin: content-box;
-		background-image: url(https://w.ladicdn.com/s1440x747/5e7f0a83b0115d312e4d7d67/rainbow-background-by-freeject-1-20220322165049.jpg);
-		background-position: left top;
-		background-repeat: repeat;
-		filter: contrast(90%) saturate(128%) blur(80px);
-	}
+	// &__background {
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	height: 90%;
+	// 	top: 0;
+	// 	left: 0;
+	// 	pointer-events: none;
+	// 	overflow: hidden;
+	// 	background-size: cover;
+	// 	background-attachment: scroll;
+	// 	background-origin: content-box;
+	// 	background-image: url(https://w.ladicdn.com/s1440x747/5e7f0a83b0115d312e4d7d67/rainbow-background-by-freeject-1-20220322165049.jpg);
+	// 	background-position: left top;
+	// 	background-repeat: repeat;
+	// 	filter: contrast(90%) saturate(128%) blur(80px);
+	// }
 	&__list-items {
 		opacity: 0.9999999;
 		padding: 130px 135px 110px 135px;
@@ -955,4 +958,22 @@ textarea[id='response'] {
 	background-color: #3b5998;
 	padding: 5px 8px;
 	border-radius: 10px;
+}
+
+video {
+	-moz-transform: translateX(50%) translateY(50%);
+	-webkit-transform: translateX(50%) translateY(50%);
+	-ms-transform: translateX(50%) translateY(50%);
+	transform: translateX(50%) translateY(50%);
+	bottom: 50%;
+	height: auto;
+	min-height: 100%;
+	min-width: 100%;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+	width: auto;
+	opacity: 0.15;
+	filter: blur(5px);
+	scroll-behavior: smooth;
 }
