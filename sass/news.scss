@@ -141,7 +141,7 @@
 				bottom: 50px;
 			}
 			@include Responsive(XS) {
-				bottom: 90px;
+				bottom: 70px;
 			}
 		}
 		h3 {
@@ -186,7 +186,7 @@
 				bottom: 50px;
 			}
 			@include Responsive(XS) {
-				bottom: 90px;
+				bottom: 70px;
 			}
 		}
 		h3 {
@@ -203,26 +203,28 @@
 		}
 	}
 }
-.news__more-title,
-.news__page--right-title {
+.news__more-title {
+	@include Responsive(SM) {
+		padding: 0px !important;
+	}
 	h2 {
-		color: $orange-color;
+		color: $orange-color !important;
 		display: inline-block;
 		font-size: 26px;
 		font-weight: bold;
-		border-bottom: 2px solid $orange-color;
-		@include Responsive(SM) {
-			font-size: 20px;
-		}
-		@include Responsive(XSM) {
-			font-size: 18px;
+		@include Responsive(XS) {
+			font-size: 25px !important;
 		}
 	}
 }
-.news__more-title {
-	h2 {
-		@include Responsive(XSM) {
-			font-size: 25px;
+
+.news__page-title {
+	color: $orange-color !important;
+	padding-left: 0px !important;
+	@include Responsive(MD) {
+		h2 {
+			font-size: 25px !important;
+			white-space: nowrap;
 		}
 	}
 }

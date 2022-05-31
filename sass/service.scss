@@ -20,24 +20,6 @@
 		padding: 20px;
 		padding-top: 50px;
 	}
-
-	&__title {
-		display: inline-block;
-		position: relative;
-		h2 {
-			font-size: 30px;
-			font-weight: bold;
-			color: $orange-color;
-		}
-		&-shape {
-			position: absolute;
-			bottom: -5px;
-			left: 20%;
-			width: 60%;
-			height: 3px;
-			background-color: $orange-color;
-		}
-	}
 	&__hot {
 		background-color: $black-color;
 		position: relative;
@@ -57,9 +39,6 @@
 			background-image: url(../img/service-bgr.png);
 			filter: blur(10px);
 			opacity: 0.15;
-		}
-		&-title {
-			text-align: center;
 		}
 		&-content {
 			margin-top: 50px;
@@ -111,13 +90,6 @@
 			background-image: url(../img/service-more-br.png);
 			filter: blur(10px);
 			opacity: 0.24;
-		}
-		&-title {
-			text-align: center;
-			margin-top: 30px;
-			@include Responsive(SM) {
-				margin-top: 45px;
-			}
 		}
 		&-list {
 			margin-top: 80px;
@@ -231,6 +203,11 @@
 	}
 	&--title {
 		text-align: center;
+		h2 {
+			@include Responsive(MD) {
+				font-size: 25px !important;
+			}
+		}
 	}
 }
 .marketing-list {

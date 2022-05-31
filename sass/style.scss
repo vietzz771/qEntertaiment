@@ -603,6 +603,9 @@ div[id] {
 	@include Responsive(XS) {
 		padding-bottom: 80px;
 	}
+	@include Responsive(MD) {
+		padding-bottom: 80px;
+	}
 	&__items {
 		padding: 50px 135px 0 135px;
 		display: grid;
