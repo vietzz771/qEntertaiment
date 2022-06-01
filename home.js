@@ -38,7 +38,7 @@
 // 	loadmoreDIV.style.display = 'flex';
 // 	console.log(loadmoreDIV);
 // });
-document.querySelector('.news__list-items').readmore({
+$('.news__list-items').readmore({
 	speed: 1000, //Açılma Hızı
 	collapsedHeight: 620, // 100px sonra yazının kesileceğini belirtir.
 	moreLink:
