@@ -236,7 +236,12 @@
 				</div>
 				<div class="line__title"></div>
 			</div>
-			<div class="news__list-items">
+			<div
+				class="news__list-items"
+				aria-expanded="false"
+				data-readmore=""
+				id="rmjs-1"
+			>
 				<div class="news__items">
 					<div class="news__items-spacing">
 						<div class="news__items--img">
@@ -418,7 +423,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="news__fake">
+			<!-- <div class="news__fake">
 				<div class="news__fake-border"></div>
 				<div class="news__fake-border"></div>
 				<div class="news__fake-border"></div>
@@ -426,6 +431,9 @@
 			<div class="news__see-more">
 				<a id="loadmore"><i class="bx bxs-chevron-down"></i></a>
 			</div>
+			<div class="news__see-less">
+				<a id="loadless"><i class="bx bxs-chevron-up"></i></a>
+			</div> -->
 		</div>
 		<div class="gallery" id="gallery">
 			<div class="gallery__background"></div>
@@ -948,6 +956,8 @@
 			>
 		</div>
 	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/node_modules/readmore-js/readmore.min.js"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
