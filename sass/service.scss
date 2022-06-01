@@ -284,3 +284,17 @@
 		font-weight: bold;
 	}
 }
+.marketing__content-more,
+.marketing__content-more2,
+.marketing__content-more3 {
+	display: none;
+}
+
+.service__see-more {
+	cursor: pointer;
+	a {
+		i {
+			font-size: 30px;
+		}
+	}
+}
