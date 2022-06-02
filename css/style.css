@@ -1175,7 +1175,6 @@ div[id] {
 }
 @media only screen and (max-width: 480px) {
   .news__see-less {
-    margin-top: 50px;
     left: 45%;
   }
 }

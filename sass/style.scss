@@ -363,7 +363,6 @@ div[id] {
 		display: inline-block;
 		left: 48%;
 		@include Responsive(XS) {
-			margin-top: 50px;
 			left: 45%;
 		}
 		a {
