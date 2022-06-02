@@ -44,5 +44,5 @@ $('.news__list-items').readmore({
 	moreLink:
 		'<div class="news__see-more"><a href="#"><i class="bx bxs-chevron-down"></i></a></div>', // açma linki yazısı
 	lessLink:
-		'<div class="news__see-less"><a href="#"><i class="bx bxs-chevron-up"></i></a></div>', // kapatma linki yazısı
+		'<div class="news__see-less"><a href="#news"><i class="bx bxs-chevron-up"></i></a></div>', // kapatma linki yazısı
 });

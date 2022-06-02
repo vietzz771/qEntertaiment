@@ -292,48 +292,48 @@ div[id] {
 	@include Responsive(MD) {
 		padding-bottom: 50px;
 	}
-	&__fake {
-		padding: 60px 135px;
-		padding-bottom: 0;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 100px;
-		@include Responsive(MD) {
-			padding: 0 114px;
-			gap: 50px;
-			row-gap: 70px;
-		}
-		@include Responsive(SM) {
-			padding: 0 75px;
-			gap: 35px;
-			row-gap: 70px;
-		}
-		@include Responsive(XSM) {
-			grid-template-columns: 1fr;
-		}
-		@include Responsive(XS) {
-			grid-template-columns: 1fr;
-			padding: 70px 20px;
-		}
-		.news__fake-border:nth-child(2) {
-			@include Responsive(XSM) {
-				display: none;
-			}
-		}
-		.news__fake-border:nth-child(3) {
-			@include Responsive(XSM) {
-				display: none;
-			}
-		}
-	}
-	&__fake-border {
-		height: 10px;
-		border-top: 1px solid $purple-color;
-		border-right: 1px solid $purple-color;
-		border-left: 1px solid $purple-color;
-		border-top-right-radius: 50px;
-		position: relative;
-	}
+	// &__fake {
+	// 	padding: 60px 135px;
+	// 	padding-bottom: 0;
+	// 	display: grid;
+	// 	grid-template-columns: repeat(3, 1fr);
+	// 	gap: 100px;
+	// 	@include Responsive(MD) {
+	// 		padding: 0 114px;
+	// 		gap: 50px;
+	// 		row-gap: 70px;
+	// 	}
+	// 	@include Responsive(SM) {
+	// 		padding: 0 75px;
+	// 		gap: 35px;
+	// 		row-gap: 70px;
+	// 	}
+	// 	@include Responsive(XSM) {
+	// 		grid-template-columns: 1fr;
+	// 	}
+	// 	@include Responsive(XS) {
+	// 		grid-template-columns: 1fr;
+	// 		padding: 70px 20px;
+	// 	}
+	// 	.news__fake-border:nth-child(2) {
+	// 		@include Responsive(XSM) {
+	// 			display: none;
+	// 		}
+	// 	}
+	// 	.news__fake-border:nth-child(3) {
+	// 		@include Responsive(XSM) {
+	// 			display: none;
+	// 		}
+	// 	}
+	// }
+	// &__fake-border {
+	// 	height: 10px;
+	// 	border-top: 1px solid $purple-color;
+	// 	border-right: 1px solid $purple-color;
+	// 	border-left: 1px solid $purple-color;
+	// 	border-top-right-radius: 50px;
+	// 	position: relative;
+	// }
 	&__see-more {
 		display: flex;
 		justify-content: center;
@@ -347,7 +347,7 @@ div[id] {
 				margin-top: 0px;
 			}
 			@include Responsive(XS) {
-				margin-top: -5px;
+				margin-top: -10px !important;
 			}
 			i {
 				font-size: 50px;
@@ -356,16 +356,17 @@ div[id] {
 	}
 	&__see-less {
 		position: relative;
-		display: flex;
-		justify-content: center;
-		@include Responsive(XSM) {
-			margin-top: 250px;
+		display: inline-block;
+		left: 50%;
+		@include Responsive(XS) {
+			margin-top: 50px;
+			left: 45% !important;
 		}
 		a {
 			margin-top: 20px;
 			cursor: pointer;
-			@include Responsive(XS) {
-				margin-top: 75px;
+			@include Responsive(XSM) {
+				margin-top: 250px;
 			}
 			i {
 				font-size: 50px;
@@ -396,7 +397,6 @@ div[id] {
 		}
 		@include Responsive(XSM) {
 			grid-template-columns: 1fr;
-			max-height: 1700px;
 		}
 		@include Responsive(XS) {
 			grid-template-columns: 1fr;

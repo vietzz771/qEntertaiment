@@ -1138,56 +1138,6 @@ div[id] {
     padding-bottom: 50px;
   }
 }
-.news__fake {
-  padding: 60px 135px;
-  padding-bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-}
-@media only screen and (max-width: 1024px) {
-  .news__fake {
-    padding: 0 114px;
-    gap: 50px;
-    row-gap: 70px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .news__fake {
-    padding: 0 75px;
-    gap: 35px;
-    row-gap: 70px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .news__fake {
-    grid-template-columns: 1fr;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .news__fake {
-    grid-template-columns: 1fr;
-    padding: 70px 20px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .news__fake .news__fake-border:nth-child(2) {
-    display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .news__fake .news__fake-border:nth-child(3) {
-    display: none;
-  }
-}
-.news__fake-border {
-  height: 10px;
-  border-top: 1px solid #6c16c7;
-  border-right: 1px solid #6c16c7;
-  border-left: 1px solid #6c16c7;
-  border-top-right-radius: 50px;
-  position: relative;
-}
 .news__see-more {
   display: flex;
   justify-content: center;
@@ -1206,7 +1156,7 @@ div[id] {
 }
 @media only screen and (max-width: 480px) {
   .news__see-more a {
-    margin-top: -5px;
+    margin-top: -10px !important;
   }
 }
 .news__see-more a i {
@@ -1214,21 +1164,22 @@ div[id] {
 }
 .news__see-less {
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  left: 50%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .news__see-less {
-    margin-top: 250px;
+    margin-top: 50px;
+    left: 45% !important;
   }
 }
 .news__see-less a {
   margin-top: 20px;
   cursor: pointer;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .news__see-less a {
-    margin-top: 75px;
+    margin-top: 250px;
   }
 }
 .news__see-less a i {
@@ -1266,7 +1217,6 @@ div[id] {
 @media only screen and (max-width: 600px) {
   .news__list-items {
     grid-template-columns: 1fr;
-    max-height: 1700px;
   }
 }
 @media only screen and (max-width: 480px) {
