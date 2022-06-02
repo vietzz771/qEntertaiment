@@ -39,10 +39,10 @@
 // 	console.log(loadmoreDIV);
 // });
 $('.news__list-items').readmore({
-	speed: 1000, //Açılma Hızı
+	speed: 5000, //Açılma Hızı
 	collapsedHeight: 570, // 100px sonra yazının kesileceğini belirtir.
 	moreLink:
-		'<div class="news__see-more"><a href="#"><i class="bx bxs-chevron-down"></i></a></div>', // açma linki yazısı
+		'<div class="news__see-more"><a href=""><i class="bx bxs-chevron-down"></i></a></div>', // açma linki yazısı
 	lessLink:
-		'<div class="news__see-less"><a href="#news"><i class="bx bxs-chevron-up"></i></a></div>', // kapatma linki yazısı
+		'<div class="news__see-less"><a href=""><i class="bx bxs-chevron-up"></i></a></div>', // kapatma linki yazısı
 });
