@@ -1145,6 +1145,11 @@ div[id] {
   z-index: 888;
   position: relative;
 }
+@media only screen and (max-width: 480px) {
+  .news__see-more {
+    left: 45%;
+  }
+}
 .news__see-more a {
   margin-top: -50px;
   cursor: pointer;
@@ -1171,6 +1176,7 @@ div[id] {
 @media only screen and (max-width: 480px) {
   .news__see-less {
     margin-top: 50px;
+    left: 45%;
   }
 }
 .news__see-less a {

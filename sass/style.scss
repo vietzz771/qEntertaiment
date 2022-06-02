@@ -340,6 +340,9 @@ div[id] {
 		left: 48%;
 		z-index: 888;
 		position: relative;
+		@include Responsive(XS) {
+			left: 45%;
+		}
 		a {
 			margin-top: -50px;
 			cursor: pointer;
@@ -361,6 +364,7 @@ div[id] {
 		left: 48%;
 		@include Responsive(XS) {
 			margin-top: 50px;
+			left: 45%;
 		}
 		a {
 			margin-top: 20px;
