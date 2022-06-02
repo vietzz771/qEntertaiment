@@ -40,7 +40,7 @@
 // });
 $('.news__list-items').readmore({
 	speed: 1000, //Açılma Hızı
-	collapsedHeight: 620, // 100px sonra yazının kesileceğini belirtir.
+	collapsedHeight: 570, // 100px sonra yazının kesileceğini belirtir.
 	moreLink:
 		'<div class="news__see-more"><a href="#"><i class="bx bxs-chevron-down"></i></a></div>', // açma linki yazısı
 	lessLink:

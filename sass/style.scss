@@ -335,8 +335,9 @@ div[id] {
 	// 	position: relative;
 	// }
 	&__see-more {
-		display: flex;
-		justify-content: center;
+		position: relative;
+		display: inline-block;
+		left: 48%;
 		z-index: 888;
 		position: relative;
 		a {
@@ -357,10 +358,9 @@ div[id] {
 	&__see-less {
 		position: relative;
 		display: inline-block;
-		left: 50%;
+		left: 48%;
 		@include Responsive(XS) {
 			margin-top: 50px;
-			left: 45% !important;
 		}
 		a {
 			margin-top: 20px;

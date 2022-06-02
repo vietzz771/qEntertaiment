@@ -1139,8 +1139,9 @@ div[id] {
   }
 }
 .news__see-more {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  display: inline-block;
+  left: 48%;
   z-index: 888;
   position: relative;
 }
@@ -1165,12 +1166,11 @@ div[id] {
 .news__see-less {
   position: relative;
   display: inline-block;
-  left: 50%;
+  left: 48%;
 }
 @media only screen and (max-width: 480px) {
   .news__see-less {
     margin-top: 50px;
-    left: 45% !important;
   }
 }
 .news__see-less a {
