@@ -965,6 +965,7 @@ div[id] {
 
 .carousel {
   margin-top: 80px;
+  z-index: 123;
 }
 .carousel-inner {
   scroll-padding-top: -80px;
@@ -1170,7 +1171,13 @@ div[id] {
 }
 
 .news {
+  z-index: 123;
   background-color: black;
+}
+@media only screen and (min-width: 2250px) {
+  .news {
+    padding-top: 100px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .news {

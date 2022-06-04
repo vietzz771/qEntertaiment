@@ -141,6 +141,7 @@ div[id] {
 // Carousel
 .carousel {
 	margin-top: 80px;
+	z-index: 123;
 	&-inner {
 		scroll-padding-top: -80px;
 	}
@@ -306,7 +307,11 @@ div[id] {
 }
 // news
 .news {
+	z-index: 123;
 	background-color: $black-color;
+	@include Responsive(XXL) {
+		padding-top: 100px;
+	}
 	@include Responsive(MD) {
 		padding-bottom: 50px;
 	}
