@@ -1604,6 +1604,11 @@ div[id] {
     padding-bottom: 80px;
   }
 }
+@media only screen and (min-width: 2250px) {
+  .contact {
+    padding-bottom: 80px;
+  }
+}
 .contact__items {
   padding: 50px 135px 0 135px;
   display: grid;
@@ -1971,6 +1976,11 @@ textarea[id=response] {
   background-color: #3b5998;
   padding: 5px 8px;
   border-radius: 10px;
+}
+@media only screen and (min-width: 2250px) {
+  .messenger-support {
+    left: -220px;
+  }
 }
 
 video {

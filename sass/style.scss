@@ -730,6 +730,9 @@ div[id] {
 	@include Responsive(MD) {
 		padding-bottom: 80px;
 	}
+	@include Responsive(XXL) {
+		padding-bottom: 80px;
+	}
 	&__items {
 		padding: 50px 135px 0 135px;
 		display: grid;
@@ -1089,6 +1092,9 @@ textarea[id='response'] {
 	background-color: #3b5998;
 	padding: 5px 8px;
 	border-radius: 10px;
+	@include Responsive(XXL) {
+		left: -220px;
+	}
 }
 
 video {
