@@ -38,6 +38,7 @@
 // 	loadmoreDIV.style.display = 'flex';
 // 	console.log(loadmoreDIV);
 // });
+
 $('.news__list-items').readmore({
 	collapsedHeight: 570,
 	moreLink:
